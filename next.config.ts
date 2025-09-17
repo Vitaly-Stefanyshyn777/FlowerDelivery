@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
-// Використовуємо any, щоб не впиратися у типи experimental полів
-const nextConfig: any = {
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
@@ -11,12 +12,6 @@ const nextConfig: any = {
         pathname: "/**",
       },
     ],
-  },
-  experimental: {
-    turbopack: {
-      // Вказуємо корінь проєкту для коректної роботи alias `@/*`
-      root: __dirname,
-    },
   },
 };
 
