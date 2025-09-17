@@ -8,7 +8,7 @@ import {
   Coupon,
 } from "@/types";
 
-const API_BASE_URL = "http://localhost:3300/api/v1";
+const API_BASE_URL = "https://flowerdeliverybackend.onrender.com/api/v1";
 
 class ApiClient {
   private baseUrl: string;
