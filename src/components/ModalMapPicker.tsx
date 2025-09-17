@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import dynamic from "next/dynamic";
 import { MapPoint } from "./MapPicker";
 import { useNpCities, useNpWarehouses } from "@/hooks/useNovaPoshta";
-import { BACKEND_BASE_URL } from "../../env";
+import { BACKEND_BASE_URL } from "@/lib/env";
 
 type LatLng = { lat: number; lng: number };
 

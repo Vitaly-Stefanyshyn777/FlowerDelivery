@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { BACKEND_BASE_URL } from "../../env";
+import { BACKEND_BASE_URL } from "@/lib/env";
 
 export interface NpCity {
   ref: string;

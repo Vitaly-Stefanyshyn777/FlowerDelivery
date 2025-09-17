@@ -128,7 +128,9 @@ export function MapPicker({
   const AnyTileLayer = TileLayer as unknown as React.ComponentType<
     Record<string, unknown>
   >;
-  const AnyPolyline = Polyline as unknown as React.ComponentType<Record<string, unknown>>;
+  const AnyPolyline = Polyline as unknown as React.ComponentType<
+    Record<string, unknown>
+  >;
   const AnyCircleMarker = CircleMarker as unknown as React.ComponentType<
     Record<string, unknown>
   >;
