@@ -135,7 +135,7 @@ export function ShopCatalogView() {
               onFilterChange={handleFilterChange}
               onSortChange={handleSortChange}
             />
-            <div className="mt-6 p-4 bg-white rounded-lg border">
+            {/* <div className="mt-6 p-4 bg-white rounded-lg border">
               <div className="flex items-center justify-between mb-2">
                 <h3 className="font-semibold text-gray-900">Букети</h3>
                 <Link
@@ -149,7 +149,7 @@ export function ShopCatalogView() {
                 Переглянь добірку: «Червона любов», «Ніжність», «Весняний
                 настрій», «Білий шовк».
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Каталог */}
