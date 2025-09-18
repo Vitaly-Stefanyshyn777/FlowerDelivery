@@ -69,5 +69,7 @@ export function useNpWarehouses(params: {
     queryFn: () => fetchJson(url),
     enabled: Boolean(cityRef),
     staleTime: 2 * 60 * 1000,
+    retry: 1, // Повторити тільки 1 раз
+    retryDelay: 1000, // Затримка 1 секунда
   });
 }
