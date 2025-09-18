@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Search, X } from "lucide-react";
 import { ProductFilters as ProductFiltersType, SortOption } from "@/types";
 import { useProductCategories } from "@/hooks/useProductCategories";
@@ -27,6 +27,14 @@ export function ProductFilters({
   const hasCategoryChanges =
     JSON.stringify(selectedCategories) !==
     JSON.stringify(filters.categories || []);
+
+  // Автоматично застосовувати пошук із дебаунсом під час введення
+  // useEffect(() => {
+  //   const id = setTimeout(() => {
+  //     onFilterChange({ search: searchQuery || undefined });
+  //   }, 400);
+  //   return () => clearTimeout(id);
+  // }, [searchQuery, onFilterChange]);
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -57,7 +65,7 @@ export function ProductFilters({
         )}
       </div>
 
-      <div className="mb-6">
+      {/* <div className="mb-6">
         <form onSubmit={handleSearchSubmit}>
           <div className="relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
@@ -70,7 +78,7 @@ export function ProductFilters({
             />
           </div>
         </form>
-      </div>
+      </div> */}
 
       <div className="mb-6">
         <h3 className="text-sm font-medium text-gray-900 mb-3">Категорії</h3>
